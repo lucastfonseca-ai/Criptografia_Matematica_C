@@ -17,11 +17,7 @@
 - [🔑 Como funciona a criptografia](#-como-funciona-a-criptografia)
 - [📐 Sequências matemáticas](#-sequências-matemáticas)
 - [⚙️ Conceitos computacionais aplicados](#️-conceitos-computacionais-aplicados)
-- [▶️ Como executar](#️-como-executar)
-- [🧪 Exemplo de execução](#-exemplo-de-execução)
-- [📄 Arquivo de resultado](#-arquivo-de-resultado)
-- [⚠️ Limitações e melhorias](#️-limitações-e-melhorias)
-- [📁 Estrutura do repositório](#-estrutura-do-repositório)
+- [⚠️ Limitações e melhorias](#️-limitações-e-melhorias))
 
 ---
 
