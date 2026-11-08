@@ -17,7 +17,7 @@
 - [🔑 Como funciona a criptografia](#-como-funciona-a-criptografia)
 - [📐 Sequências matemáticas](#-sequências-matemáticas)
 - [⚙️ Conceitos computacionais aplicados](#️-conceitos-computacionais-aplicados)
-- [⚠️ Limitações e melhorias](#️-limitações-e-melhorias))
+- [⚠️ Limitações e melhorias](#️-limitações-e-melhorias)
 
 ---
 
