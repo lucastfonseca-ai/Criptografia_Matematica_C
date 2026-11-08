@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+  char p[16]; int shift, tipo, n, t, a = 1, b = 1;
+
+  printf("Palavra (ate 15 letras minusculas): "); scanf("%15s", p);
+  printf("SHIFT: "); scanf("%d", &shift);
+  printf("Sequencia (1-PA 2-PG 3-Fibonacci 4-Quadrados): "); scanf("%d", &tipo);
+
+  for (n = 0; p[n]; n++) {
+    switch (tipo) {  // valor da sequencia para a letra n
+      case 1: t = 2 + 3 * n; break;  // PA: 2, 5, 8...
+      case 2: t = a; a *= 2; break;  // PG: 1, 2, 4...
+      case 3: t = a; b += a; a = b - a; break; // Fibonacci: 1, 1, 2, 3, 5...
+      case 4: t = (n + 1) * (n + 1); break; // Quadrados: 1, 4, 9...
+      default: t = 0;
+    }
+
+    p[n] = (p[n] - 'a' + shift) % 26 + 'a'; // Camada 1: Cifra de Cesar
+    p[n] = (p[n] - 'a' + t) % 26 + 'a';  // Camada 2: deslocamento pela sequencia
+  }
+  printf("Palavra criptografada: %s\n", p);
+  FILE *f = fopen("resultado_criptografia.txt", "w");
+  fprintf(f, "Palavra codificada: %s | SHIFT: %d | Tipo: %d | Letras: %d\n", p, shift, tipo, n);
+  fclose(f);
+return 0;
+}
